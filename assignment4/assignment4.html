@@ -1,0 +1,51 @@
+
+<!DOCTYPE html>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        h1{
+            font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+        }
+        .text{
+            background-color: antiquewhite;
+            font-family: Arial, Helvetica, sans-serif;
+            padding: 20px;
+        }
+        .calculator{
+            background-color: aqua;
+            width: 20%;
+        }
+    </style>
+</head>
+<body>
+    <div class="calculator">
+    <h1>Number Addition</h1>
+    Enter first number:
+  <input type="text" id="txt1" name="text1">
+  <br> Enter second number:
+  <input type="text" id="txt2" name="text2">
+  <br>
+  <button onclick="addNums()">Add</button><br>
+    <textarea id = "result"></textarea>
+    </div>
+    <h1>Ways we can access elements in the DOM.</h1>
+    <ul class="text">
+        <li>document.getElementById(id)- The getElementById() method returns the element that has the ID attribute with the specified value.
+        This method is one of the most common methods in the HTML DOM, and is used almost every time you want to manipulate, or get info from, an element on your document.
+        Returns null if no elements with the specified ID exists.An ID should be unique within a page. However, if more than one element with the specified ID exists, the getElementById() method returns the first element in the source code.</li>
+    <br>
+        <li>document.getElementsByClassName(className)-The getElementsByClassName() method returns a collection of all elements in the document with the specified class name, as an HTMLCollection object.
+        The HTMLCollection object represents a collection of nodes. The nodes can be accessed by index numbers. The index starts at 0.</li>
+<br>
+        <li>document.getElementsByTagName(tagName)-The getElementsByTagName() method returns a collection of all elements in the document with the specified tag name, as an HTMLCollection object.
+
+        The HTMLCollection object represents a collection of nodes. The nodes can be accessed by index numbers. The index starts at 0.</li>
+    </ul>
+ <script src="index.js">
+ </script>
+ </body>
+ </html>
